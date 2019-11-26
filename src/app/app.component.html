@@ -1,9 +1,19 @@
-<div class="container">
-  <ul class="tabrow btn btn-info">
-    <li><a routerLink="/" routerLinkActive="active">Home</a></li>
-    <li><a routerLink="/about" routerLinkActive="active">About</a></li>
-    <li><a routerLink="/user/list" routerLinkActive="active">User</a></li>
-  </ul> 
-   <router-outlet></router-outlet>
-</div>
+<div class="card text-center">
+    <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs"> 
+          <li class="nav-item">
+              <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+          </li>       
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/user/list" routerLinkActive="active">User</a>
+        </li>       
+      </ul>
+    </div>
+    <div class="card-body">
+        <router-outlet></router-outlet>
+    </div>
+  </div>
 
